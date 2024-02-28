@@ -26,7 +26,7 @@ module.exports = {
         // Retrieving this information directly on-chain is prohibitively costly.
         // To alleviate this, we've encapsulated the TVL in a server, retrieve directly from the Filecoin chain
         // This serves the data in a more efficient format and prevents overloading the Defillama frontend
-        get("http://repl.fi/api/tvl"),
+        get("http://repl.fi/api/stats"),
       ]);
       tvl = parseEther(resp.tvl_fil.toString());
 
